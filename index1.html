@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final</title>
+    <style>
+        * {
+            user-select: none;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-image: url("https://wallup.net/wp-content/uploads/2018/09/25/596580-abstract-lines-colorful-_Matrix.jpg");
+            position: absolute;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            background-color: black;
+        }
+        .Main {
+            position: relative;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            background-color: #9c9c9c;
+        }
+        .up {
+            display: flex;
+            height: 10%;
+            width: 100%;
+            z-index: 6;
+            background-color: white;
+            flex-wrap: wrap;
+        }
+        .up_title {
+            flex: 1 0 25%;
+            position: relative;
+            border-radius: 0px;
+            outline: 0;
+        }
+        .but {
+            background-color: lightskyblue;
+            border-color: #25a7fd;
+            padding: 5px;
+            margin: 2px;
+            outline: 0;
+        }
+        .txt {
+            position: relative;
+            top: 12.5%;
+            text-align: center;
+            color: gainsboro;
+        }
+
+        .column {
+            flex: 0 0 25%;
+            position: relative;
+        }
+
+        .column img {
+            opacity: 1;
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+        }
+
+        .wall {
+            width: 100%;
+            height: 90%;
+            content: "";
+            display: flex;
+            flex-wrap: wrap;
+            clear: both;
+        }
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="Main">
+    <div class="up">
+        <button class="up_title" onclick="location.href='index.html'"><h1>Main</h1></button>
+        <button class="up_title"><h1>Art station</h1></button>
+        <button class="up_title" onclick="location.href='index2.html'"><h1>Refrigerator</h1></button>
+        <button class="up_title" onclick="location.href='index3.html'"><h1>Timer</h1></button>
+    </div>
+    <div class="wall">
+
+    </div>
+</div>
+<div class="txt">
+    <button class="but" onclick="loadJSON()">Download image</button>
+</div>
+<script src="script.js"></script>
+<script src="jquery.js"></script>
+</body>
+</html>

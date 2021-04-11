@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final</title>
+    <style>
+        body {
+            background-image: url("https://wallup.net/wp-content/uploads/2018/09/25/596580-abstract-lines-colorful-_Matrix.jpg");
+            position: absolute;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            background-color: black;
+        }
+        .Main {
+            position: relative;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            background-color: #9c9c9c;
+        }
+        .up {
+            display: flex;
+            height: 10%;
+            width: 100%;
+            z-index: 6;
+            background-color: white;
+            flex-wrap: wrap;
+        }
+        .up_title {
+            flex: 1 0 25%;
+            position: relative;
+            border-radius: 0px;
+            outline: 0;
+        }
+        .game {
+            width: 50%;
+            height: 88%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            border: 0.5rem solid black;
+            outline: 0;
+            border-radius: 1rem;
+            background-color: #898989;
+        }
+        .ventil {
+            background: url("ventil.png") bottom center no-repeat;
+            flex: 1 0 25%;
+            overflow: hidden;
+            position: relative;
+            background-size: 25%;
+            z-index: 10;
+            transform: rotate(0deg);
+            transition: all 0.0s;
+        }
+        .txt {
+            position: relative;
+            top: 12.5%;
+            text-align: center;
+            color: gainsboro;
+            z-index: 10;
+        }
+        .but {
+            padding: 5px;
+            margin: 2px;
+            flex: 1 0 25%;
+            background: #757579;
+            font-size: 2rem;
+            border: 2px solid #0a0a0a;
+            outline: none;
+            border-radius: 20px;
+            transition: all 0.5s;
+            bottom: 5%;
+        }
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="Main">
+    <div class="up">
+        <button class="up_title" onclick="location.href='index.html'"><h1>Main</h1></button>
+        <button class="up_title" onclick="location.href='index1.html'"><h1>Art station</h1></button>
+        <button class="up_title"><h1>Refrigerator</h1></button>
+        <button class="up_title" onclick="location.href='index3.html'"><h1>Timer</h1></button>
+    </div>
+    <div class="game">
+        <div class="ventil 1 a" id="1"></div>
+        <div class="ventil 1 b" id="2"></div>
+        <div class="ventil 1 c" id="3"></div>
+        <div class="ventil 1 d" id="4"></div>
+        <div class="ventil 2 a" id="5"></div>
+        <div class="ventil 2 b" id="6"></div>
+        <div class="ventil 2 c" id="7"></div>
+        <div class="ventil 2 d" id="8"></div>
+        <div class="ventil 3 a" id="9"></div>
+        <div class="ventil 3 b" id="10"></div>
+        <div class="ventil 3 c" id="11"></div>
+        <div class="ventil 3 d" id="12"></div>
+        <div class="ventil 4 a" id="13"></div>
+        <div class="ventil 4 b" id="14"></div>
+        <div class="ventil 4 c" id="15"></div>
+        <div class="ventil 4 d" id="16"></div>
+    </div>
+</div>
+<div class="txt">
+    <button class="but" onclick="start()">Start</button>
+    <button class="but" onclick="restart()">Restart</button>
+</div>
+<script src="script.js"></script>
+<script src="jquery.js"></script>
+</body>
+</html>
